@@ -1,0 +1,43 @@
+[web-servers]
+
+aws1 ansible_host=18.184.201.149 ansible_user=ubuntu ansible_ssh_private_key_file=/etc/ansible/Frunkfut.pem
+aws2 ansible_host=18.196.22.113  ansible_user=ubuntu ansible_ssh_private_key_file=/etc/ansible/Frunkfut.pem
+
+[america]
+am_win10 ansible_host=192.168.3.71
+am_win7  ansible_host=192.168.3.72
+
+[gtbtechnologies]
+lol ansible_host=192.168.0.44
+vaz ansible_host=192.168.0.159
+65  ansible_host=192.168.0.65
+
+[us]
+us_win10 ansible_host=192.168.4.1
+us_win7  ansible_host=192.168.4.62
+
+[us:vars]
+ansible_user = jim
+ansible_password = Pass8397@
+ansible_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation = ignore
+
+[gtbtechnologies:vars]
+ansible_user = jim
+ansible_password = Pass8397@
+ansible_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation = ignore
+
+[america:vars]
+ansible_user = jim
+ansible_password = Pass8397@
+ansible_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation = ignore
+
+
+
+
+
