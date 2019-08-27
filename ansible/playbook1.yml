@@ -4,7 +4,7 @@
   tasks:
    - name: download the agent
      win_get_url:
-       url: http://192.168.0.4/files/JENKINS_BUILDS/win/branches/origin/win_endpoint_dev_branch/EndpointAgent/277-bf4b61ee9e7c0d237e587818a6bfce9fd2e57270/GTBEndpointAgent.msi
+       url: "{{ AGENT }}"
        dest: C:\gtb\agent\GTBEndpointAgent.msi
   
    - name: Install the Agent
