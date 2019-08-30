@@ -1,6 +1,6 @@
 ---
 - name: gtb agent install
-  hosts: vaz 65
+  hosts: all
   tasks:
    - name: download the agent
      win_get_url:
