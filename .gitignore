@@ -1,6 +1,4 @@
 terraform/GTB/.terraform/
-start_tc.sh
-team-city/
 nexus-data/
 start_tc.sh
 ts-agent.sh
