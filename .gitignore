@@ -1,4 +1,4 @@
-/terraform/GTB/.terraform/*
+terraform/GTB/.terraform/*
 nexus-data/
 start_tc.sh
 ts-agent.sh
